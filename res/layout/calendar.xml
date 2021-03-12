@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="350dp"
+    android:weightSum="1"
+    android:layout_gravity="center"
+    >
+    <include layout="@layout/calendar_action_bar"/>
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+</LinearLayout>

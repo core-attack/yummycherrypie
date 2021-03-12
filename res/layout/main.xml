@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/app_background"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            >
+            <include layout="@layout/calendar"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <yummycherrypie.pl.custom_controls.CustomFontButton
+                android:background="@color/button_background"
+                android:textColor="@color/text_color"
+                android:id="@+id/btnOpenStatistics"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:text="@string/btnStatistic"
+                android:textSize="13sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5dp"
+                android:drawableTop="@drawable/ic_action_sort_by_size"
+                android:paddingTop="50dp"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontButton
+                android:background="@color/button_background"
+                android:drawableTop="@drawable/ic_action_group"
+                android:paddingTop="50dp"
+                android:textColor="@color/text_color"
+                android:id="@+id/btnOpenBookingMenLayout"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="141dp"
+                android:text="@string/btnBookingMen"
+                android:textSize="13sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5dp"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontButton
+                android:background="@color/button_background"
+                android:textColor="@color/text_color"
+                android:id="@+id/btnOpenAllBookingsLayout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="212dp"
+                android:text="@string/btnBookings"
+                android:textSize="13sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5dp"
+                android:drawableTop="@drawable/ic_action_view_as_list"
+                android:paddingTop="15dp"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontButton
+                android:background="@color/button_background"
+                android:textColor="@color/text_color"
+                android:id="@+id/btnOpenEventLayout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="283dp"
+                android:text="@string/btnEvents"
+                android:textSize="13sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5dp"
+                android:drawableTop="@drawable/ic_action_event"
+                android:paddingTop="15dp"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontButton
+                android:background="@color/button_background"
+                android:drawableTop="@drawable/ic_action_about"
+                android:paddingTop="15dp"
+                android:textColor="@color/text_color"
+                android:id="@+id/btnOpenComponentsLayout"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="71dp"
+                android:layout_marginTop="141dp"
+                android:text="@string/btnComponents"
+                android:textSize="13sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5dp"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontButton
+                android:background="@color/button_background"
+                android:textColor="@color/text_color"
+                android:id="@+id/btnOpenBookingTypeLayout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="141dp"
+                android:text="@string/btnBookingTypes"
+                android:textSize="13sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5dp"
+                android:drawableTop="@drawable/ic_action_view_as_grid"
+                android:paddingTop="5dp"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontButton
+                android:background="@color/button_background"
+                android:drawableTop="@drawable/ic_action_edit"
+                android:paddingTop="50dp"
+                android:textColor="@color/text_color"
+                android:id="@+id/btnOpenRecipesLayout"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="71dp"
+                android:layout_marginLeft="212dp"
+                android:text="@string/btnRecipes"
+                android:textSize="13sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5dp"
+                />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_color"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <yummycherrypie.pl.custom_controls.CustomFontEditText
+                android:id="@+id/editTextBookingName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/EditTextGreenTheme"
+                >
+                <requestFocus />
+            </yummycherrypie.pl.custom_controls.CustomFontEditText>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <yummycherrypie.pl.custom_controls.CustomFontTextView
+                    android:id="@+id/textViewWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvWeight"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <yummycherrypie.pl.custom_controls.CustomFontEditText
+                    android:id="@+id/editTextCakeWeight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/text_color"
+                    android:layout_marginTop="15dp"
+                    android:hint="В граммах"
+                    android:textColorHint="@color/hint_color">
+                </yummycherrypie.pl.custom_controls.CustomFontEditText>
+                <yummycherrypie.pl.custom_controls.CustomFontEditText
+                    android:id="@+id/editTextCountProduct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="15dp"
+                    android:hint="В штуках"
+                    style="@style/EditTextGreenTheme"
+                    android:visibility="invisible">
+                </yummycherrypie.pl.custom_controls.CustomFontEditText>
+            </FrameLayout>
+            <CheckBox
+                android:id="@+id/checkBoxCountable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbCountable"
+                style="@style/CheckBoxGreenTheme"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:id="@+id/textView23"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Ингредиенты"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <GridView
+                android:id="@+id/gridViewSelectedComponents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center">
+            </GridView>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:id="@+id/btnAddRecipeLine"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@color/button_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_action_add" />
+                <yummycherrypie.pl.custom_controls.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"
+                    android:text="@string/btnAddComponent" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:id="@+id/buttonSaveRecipe"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@color/button_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_action_save" />
+                <yummycherrypie.pl.custom_controls.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"
+                    android:text="@string/save" />
+            </LinearLayout>
+        </FrameLayout>
+    </TableLayout>
+</ScrollView>

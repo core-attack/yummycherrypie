@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp">
+    <include layout="@layout/item_backgrounds"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="50dp"
+        >
+        <yummycherrypie.pl.custom_controls.CustomFontTextView
+            android:id="@+id/tvBookingManName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:text="Иванов Иван Иванович"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_color">
+        </yummycherrypie.pl.custom_controls.CustomFontTextView>
+        <yummycherrypie.pl.custom_controls.CustomFontTextView
+            android:id="@+id/tvBookingManPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:text="8 919 911 82 83"
+            android:textSize="15sp"
+            android:textColor="@color/text_color">
+        </yummycherrypie.pl.custom_controls.CustomFontTextView>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp">
+    <include layout="@layout/item_backgrounds"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <yummycherrypie.pl.custom_controls.CustomFontTextView
+            android:id="@+id/tvComponentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:text="Персики консервированные"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/text_color">
+        </yummycherrypie.pl.custom_controls.CustomFontTextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right|center_vertical"
+            android:weightSum="3"
+            android:layout_marginRight="5dp"
+            >
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:id="@+id/tvComponentPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999 "
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontRoubleTextView
+                android:id="@+id/tvRouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rouble"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:id="@+id/tvComponentWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / 1000 г"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

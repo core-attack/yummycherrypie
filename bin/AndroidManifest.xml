@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cakes.p01_cake"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_min"
+        android:logo="@drawable/logo_min"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="yummycherrypie.pl.activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Cakes"></activity>
+        <activity android:name="yummycherrypie.pl.activities.bookings.BookingsFragment"></activity>
+        <activity android:name="yummycherrypie.pl.activities.components.Components"></activity>
+        <activity android:name="yummycherrypie.pl.activities.booking_men.AddBookingMan"></activity>
+        <activity android:name="yummycherrypie.pl.activities.bookings.AddBooking"></activity>
+        <activity android:name="AddCake"></activity>
+        <activity android:name="yummycherrypie.pl.activities.components.AddComponent"></activity>
+        <activity android:name="yummycherrypie.pl.activities.recipe_lines.AddRecipeLine"></activity>
+        <activity android:name="yummycherrypie.pl.activities.recipes.Recipes"></activity>
+        <activity android:name="AddCakeType"></activity>
+        <activity android:name="yummycherrypie.pl.activities.recipes.AddRecipe"></activity>
+        <activity android:name="yummycherrypie.pl.activities.bookings.BookingsPerDate"></activity>
+        <activity android:name="yummycherrypie.pl.activities.bookings.BookingsFragment"></activity>
+        <activity android:name="Calculator"></activity>
+        <activity android:name="CalculatorWeightPrice"></activity>
+        <activity android:name="CalculatorPrice"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    >
+    <yummycherrypie.pl.custom_controls.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvBookingType"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@color/list_caption_background"
+        />
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:numColumns="3"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+    <!--<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listViewBookingTypes"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp">
+        </ListView>
+    </FrameLayout>-->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/buttonAddBookingType"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_add" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="@string/btnAddBookingType" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

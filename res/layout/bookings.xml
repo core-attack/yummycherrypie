@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+    <ListView
+        android:id="@+id/listViewAllBookings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <yummycherrypie.pl.custom_controls.CustomFontButton
+            android:id="@+id/buttonAddNewEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAddNewEvent"
+            android:layout_weight="1"
+            android:background="@color/button_background"
+            android:textColor="@color/text_color"
+            android:layout_marginRight="2dp"
+            />
+        <yummycherrypie.pl.custom_controls.CustomFontButton
+            android:id="@+id/buttonAddNewBooking"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAddBooking"
+            android:textColor="@color/text_color"
+            android:background="@color/button_background"
+            android:layout_marginLeft="2dp"
+            />
+    </LinearLayout>
+</LinearLayout>

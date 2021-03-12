@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yummycherrypie.system"
+    android:versionCode="1"
+    android:versionName="@string/version" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo"
+        android:theme="@style/CustomTheme" >
+        <activity
+            android:name="yummycherrypie.pl.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.components.Components"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.booking_men.AddBookingMan"
+            android:theme="@style/CustomDialogTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.booking_men.BookingMen" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.booking_men.BookingMen"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.bookings.AddBooking"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.events.AddEvent"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.events.Events" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.components.AddComponent"
+            android:theme="@style/CustomDialogTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.components.Components" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.recipe_lines.AddRecipeLine"
+            android:theme="@style/CustomDialogTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.recipes.AddRecipe" />
+        </activity>
+
+        <fragment
+            android:name="yummycherrypie.pl.activities.recipes.AddRecipeForBookingDialog"
+            android:theme="@style/CustomDialogTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.bookings.AddBooking" />
+        </fragment>
+
+        <activity
+            android:name="yummycherrypie.pl.activities.booking_men.AddOrChooseBookingMan"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.bookings.AddBooking" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.recipes.Recipes"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.recipes.AddRecipe"
+            android:theme="@style/CustomDialogTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.recipes.Recipes" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.bookings.BookingsPerDate"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity android:name="yummycherrypie.pl.activities.MyCalendarView" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.bookings.AddOrChooseBooking"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.events.AddEvent" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.events.AddOrChooseEvent"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.bookings.AddBooking" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.booking_types.AddBookingType"
+            android:theme="@style/CustomDialogTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.booking_types.BookingTypes" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.booking_types.BookingTypes"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.events.Events"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+
+        <fragment android:name="yummycherrypie.pl.activities.statistics.MonthStatisticFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </fragment>
+
+        <activity
+            android:name="yummycherrypie.pl.activities.tools.Tools"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.tools.TableRecords"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.tools.Tools" />
+        </activity>
+
+        <fragment android:name="yummycherrypie.pl.activities.statistics.YearStatisticFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </fragment>
+        <fragment android:name="yummycherrypie.pl.activities.statistics.AllTimeStatisticFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </fragment>
+        <fragment android:name="yummycherrypie.pl.activities.bookings.BookingsFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.bookings.BookingsPager" />
+        </fragment>
+
+        <activity
+            android:name="yummycherrypie.pl.activities.bookings.BookingsPager"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.statistics.Statistics"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.bookings.BookingsTab"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.bookings.BookingsTabHost" />
+        </activity>
+        <activity
+            android:name="yummycherrypie.pl.activities.bookings.BookingsTabHost"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yummycherrypie.pl.activities.MainActivity" />
+        </activity>
+        <!--
+        <service
+            android:name="yummycherrypie.pl.notifications.BaseNotification1"
+            android:enabled="true"
+            android:process="ycp_notification"
+            >
+        </service>-->
+        <!--<receiver
+            android:name="yummycherrypie.pl.notifications.ComingBookingReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name="yummycherrypie.pl.notifications.BaseNotification"
+            android:enabled="true"
+            android:exported="true" >
+        </service>-->
+    </application>
+
+</manifest>

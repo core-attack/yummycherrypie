@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_background" type="color">#e7cdb4</color>
+    <color name="button_background" type="color">#ffffff</color>
+    <color name="transparent" type="color">#00ffffff</color>
+    <color name="button_text" type="color">#3d2a20</color>
+    <color name="text_color">#402E15</color>
+    <color name="hint_color">#b38673</color>
+    <color name="action_bar_text_color">#fff7f7</color>
+    <color name="list_caption_background">#CCffffff</color>
+    <color name="action_bar_background">#b38a76</color>
+    <color name="grid_view_item_booking_type_default">#000000</color>
+    <color name="grid_view_item_booking_type_selected">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="tvBckg1">#60ffffff</color>
+    <color name="component_color">#6c9da2</color>
+    <color name="component_border">#8684b5</color>
+    <color name="text_color_2">#ad8979</color>
+    <color name="count_weight_color">#7abfac</color>
+    <color name="price_color">#87bfbc</color>
+    <color name="discount_color">#87b8bf</color>
+    <color name="list_view_item_components_color">#6d889b</color>
+
+    <color name="pink">#f9b6c4</color>
+    <color name="orange">#f8c7ae</color>
+    <color name="yellow">#f3eda8</color>
+    <color name="light_green">#e4ecb2</color>
+    <color name="dark_green">#cbe2d0</color>
+    <color name="blue">#bdd1f3</color>
+    <color name="magenta">#d7c6d6</color>
+
+
+    <!--
+    прозрачность обозначается так:
+    обычный цвет #000000
+    цвет с прозрачностью 60% #99000000
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00
+    -->
+
+</resources>

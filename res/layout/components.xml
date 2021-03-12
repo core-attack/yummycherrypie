@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background"
+    >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <yummycherrypie.pl.custom_controls.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/tvComponents"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@color/list_caption_background"
+            />
+    </FrameLayout>
+    <ListView
+        android:id="@+id/listViewComponents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <yummycherrypie.pl.custom_controls.CustomFontButton
+            android:id="@+id/buttonRecalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRecalc"
+            android:textColor="@color/text_color"
+            android:background="@color/button_background"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"/>
+        <LinearLayout
+            android:id="@+id/buttonSaveComponent"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_add" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="@string/btnAdd" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

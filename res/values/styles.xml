@@ -1,0 +1,73 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="CustomTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:alertDialogTheme">@style/CustomDialogTheme</item>
+        <item name="android:itemBackground">@color/white</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:windowTitleStyle">@style/CustomDialogTitle</item>
+        <item name="android:alertDialogTheme">@style/CustomAlertDialogTheme</item>
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowTitleStyle">@style/CustomAlertDialogTitle</item>
+    </style>
+
+    <style name="CustomDialogTitle" parent="android:Widget.TextView">
+        <item name="android:background">@color/action_bar_background</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomAlertDialogTitle" parent="android:Widget.TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/action_bar_background</item>
+        <item name="android:titleTextStyle">@style/CustomTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="CustomTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+    </style>
+
+
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+</resources>

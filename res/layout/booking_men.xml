@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    >
+    <yummycherrypie.pl.custom_controls.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvBookingMen"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@color/list_caption_background"
+        />
+    <ListView
+        android:id="@+id/listViewBookingMen"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </ListView>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:id="@+id/buttonAddBookingMan"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_add" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="@string/btnAddBookingMan" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

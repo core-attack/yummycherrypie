@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"  >
+    <yummycherrypie.pl.custom_controls.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvComponent"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <Spinner
+        android:id="@+id/spinnerComponentsForRecipeLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:spinnerMode="dialog"
+        style="@style/SpinnerGreenTheme">
+
+        <requestFocus />
+    </Spinner>
+</FrameLayout>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"  >
+    <yummycherrypie.pl.custom_controls.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvWeight"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <yummycherrypie.pl.custom_controls.CustomFontEditText
+        android:id="@+id/editTextWeightForRecipeLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:hint="В граммах"
+        style="@style/EditTextGreenTheme"
+        />
+</FrameLayout>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/buttonAddRecipeLineForRecipe"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/button_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:clickable="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_add" />
+        <yummycherrypie.pl.custom_controls.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:text="@string/btnAdd" />
+    </LinearLayout>
+</FrameLayout>
+
+
+</LinearLayout>

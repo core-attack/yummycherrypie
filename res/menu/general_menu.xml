@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	<item
+		android:id="@+id/menu_refresh"
+		android:orderInCategory="1"
+		android:title="@string/menu_refresh"
+		android:icon="@drawable/ic_action_refresh">
+	</item>
+	<item
+		android:id="@+id/menu_add_booking"
+		android:orderInCategory="2"
+		android:title="@string/menu_add_booking"
+		>
+	</item>
+	<item
+		android:id="@+id/menu_all_bookings"
+		android:orderInCategory="3"
+		android:title="@string/menu_all_bookings">
+	</item>
+	<item
+		android:id="@+id/menu_recipes"
+		android:orderInCategory="4"
+		android:title="@string/menu_recipes">
+	</item>
+	<item
+		android:id="@+id/menu_components"
+		android:orderInCategory="5"
+		android:title="@string/menu_components">
+	</item>
+	<item
+		android:id="@+id/menu_booking_men"
+		android:orderInCategory="6"
+		android:title="@string/menu_booking_men">
+	</item>
+	<item
+		android:id="@+id/menu_tools"
+		android:orderInCategory="8"
+		android:title="@string/menu_tools">
+	</item>
+
+</menu>

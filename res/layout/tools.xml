@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <include layout="@layout/wait"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+        <TextView
+            android:id="@+id/version_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Версия"
+            android:textSize="17sp"
+            android:textColor="@color/text_color"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+        <Switch
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Режим отладки"
+            android:textColor="@color/text_color"
+            android:id="@+id/switchIsDebug"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/buttonSetDBToDefault"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_discard" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="Удалить базу данных" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+        <LinearLayout
+            android:id="@+id/buttonExportDB"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_upload" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="Сохранить базу данных" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+        <LinearLayout
+            android:id="@+id/buttonImportDB"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_download" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="Загрузить базу данных" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+        <LinearLayout
+            android:id="@+id/buttonRunTests"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_shuffle" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="Запустить тесты" />
+        </LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+        <LinearLayout
+            android:id="@+id/buttonViewRecords"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_action_view_as_list" />
+            <yummycherrypie.pl.custom_controls.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:text="Показать таблицы" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

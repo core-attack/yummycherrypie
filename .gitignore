@@ -1,0 +1,8 @@
+/.gradle
+.idea
+/.settings
+/local.properties
+/build
+/*.apk
+/yummycherrypie.iml
+*.iml
